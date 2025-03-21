@@ -21,7 +21,7 @@ button {
     }
 
     &:disabled {
-        color: $insensitive-fg-color;
+        color: mix($fg-color, bg_color(2), $weight: 50%);
     }
 
     &:backdrop {
