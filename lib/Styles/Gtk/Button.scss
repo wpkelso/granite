@@ -4,7 +4,16 @@ button {
     color: #{'@fg_color'};
     font-weight: 500;
     padding: rem(4px) rem(7px);
-    transition: backgroud duration("in-place") easing("default");
+    transition: background duration("in-place") easing("default");
+
+    &.flat {
+        background-clip: inherit;
+        background-color: bg-color(0);
+        border: 1px solid $border-color;
+        box-shadow:
+            outset-highlight("full"),
+            outset-shadow(2);
+    }
 
     &.circular {
         // Not 50% because that creates a squished ellipse for non-squares widgets
