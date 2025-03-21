@@ -6,7 +6,12 @@ button {
     padding: rem(4px) rem(7px);
     transition: background duration("in-place") easing("default");
 
-    &.flat {
+    &.flat,
+    &.image-button,
+    &.image-button:not(.text-button),
+    &.circular.image-button,
+    &.model.image-button,
+    & {
         background-clip: inherit;
         background-color: bg-color(0);
         border: 1px solid $border-color;
