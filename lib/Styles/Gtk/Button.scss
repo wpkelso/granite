@@ -1,7 +1,7 @@
 button {
     background-clip: padding-box;
     border-radius: rem(3px);
-    color: #{'@fg_color'};
+    color: $fg_color;
     font-weight: 500;
     padding: rem(4px) rem(7px);
     transition: background duration("in-place") easing("default");
